@@ -1,21 +1,24 @@
-# Repository Template
+# JVM Kata Template
 
-> A template for creating new repositories
-
-This repository is meant to serve as a template for how to set up new general purpose repositories.
-
-## What's included
-
-* Issue & Pull Request Templates
-* CODE_OF_CONDUCT.md
-* CONTRIBUTING.md
-* LICENSE
-* README.md
+> A template for creating new kata repositories targeting Java/JVM
 
 ## Usage
 
-1. [Creating a repository from a template](https://help.github.com/en/articles/creating-a-repository-from-a-template).
 1. After clonning run `./bootstrap.sh`.
+1. Execute `./gradlew test` to run a simple test that if will pass then it means that project is configured correctly.  
+
+## Description
+
+### Summary or URL link to the kata description
+
+### Constraints
+
+## Tasks
+
+```
+./gradlew test // Runs all unit tests.
+./gradlew dependencyUpdates // Displays the dependency updates for the project.
+```
 
 License
 -------
