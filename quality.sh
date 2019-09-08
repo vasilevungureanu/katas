@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
-# Run static code analysis tools to validate Shell code.
+# Runs the static code analysis tools to validate Shell code.
+# Runs the unit tests.
 
 # If a command fails then do not proceed and fail this script too
 set -o errexit
@@ -24,3 +25,6 @@ checkAllShellScripts() {
 
 # Validate Shell code with shellcheck
 checkAllShellScripts
+
+# Runs the unit tests
+./gradlew test
