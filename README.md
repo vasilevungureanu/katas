@@ -1,5 +1,7 @@
 # JVM Kata Template
 
+<a href="https://github.com/VasileUngureanu/repository-template/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
+
 > A template for creating new kata repositories targeting Java/JVM
 
 ## Usage
