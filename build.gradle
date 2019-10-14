@@ -23,8 +23,8 @@ dependencies {
 
     // Additional test flavors
     /*
-    testCompile 'com.google.truth:truth:1.0'
-    testCompile 'junit:junit:4.12'
+    testImplementation 'com.google.truth:truth:1.0'
+    testImplementation 'junit:junit:4.12'
     testImplementation 'org.hamcrest:hamcrest-all:1.3'
     */
 }
