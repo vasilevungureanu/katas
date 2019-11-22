@@ -12,9 +12,7 @@
 
 ## Description
 
-### Summary or URL link to the kata description
-
-### Constraints
+Summary or URL link to the kata description
 
 ## Tasks
 
