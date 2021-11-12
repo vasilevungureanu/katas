@@ -1,6 +1,4 @@
 plugins {
-    id 'com.adarshr.test-logger' version '1.7.0'
-    id "com.github.ben-manes.versions" version '0.24.0'
     id 'java'
 }
 
@@ -37,8 +35,4 @@ clean {
 
 test {
     useJUnitPlatform()
-    testLogging {
-        exceptionFormat = 'full'
-        events = ['passed', 'failed', 'skipped', 'standard_error', 'standard_out']
-    }
 }
