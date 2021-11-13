@@ -2,28 +2,19 @@ plugins {
     id 'java'
 }
 
-sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.mockito:mockito-junit-jupiter:4.0.0'
-
     def junitVersion = '5.8.1'
-    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
-    testImplementation "org.junit.jupiter:junit-jupiter-params:${junitVersion}"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
-    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:${junitVersion}"
 
-    testImplementation 'org.assertj:assertj-core:3.21.0'
-}
-
-clean {
-    doFirst {
-        delete 'out'
-    }
+    testImplementation(
+            platform("org.junit:junit-bom:${junitVersion}"),
+            "org.junit.jupiter:junit-jupiter:${junitVersion}",
+            'org.assertj:assertj-core:3.21.0',
+            'org.mockito:mockito-junit-jupiter:4.0.0'
+    )
 }
 
 test {
