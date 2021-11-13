@@ -1,3 +1,3 @@
 # Katas
 
-A collection of kata solutions.
+My personal solutions to many small programming problems, known as Katas.
