@@ -1,7 +1,9 @@
-.idea
 .gradle
 *.iml
 *.ipr
 *.iws
 out
 build
+
+.idea/*
+!.idea/dictionaries/
