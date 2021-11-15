@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("Year should")
-public class YearShould {
+public final class YearShould {
     @Test
     @DisplayName("not be a leap year if is not divisible by 4")
     public void
