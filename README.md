@@ -1,3 +1,3 @@
 # Katas
 
-My personal solutions to many small programming problems, known as Katas.
+Solutions to small programming problems, known as Katas.
