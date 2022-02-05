@@ -9,7 +9,7 @@ public class ReorderThreshold {
         this.currentTime = currentSystemTime;
     }
 
-    int calculate(Product product) {
+    public int calculate(Product product) {
         DateRange dateRange = new DateRange(currentTime);
         SalesTotal total = salesHistory.fetchSalesTotal(product, dateRange.getStartDate(), dateRange.getEndDate());
         return (int) ((double) (total.getTotal() / 30) * product.getLeadTime());

@@ -19,7 +19,7 @@ public class SalesHistory {
         return salesService;
     }
 
-    SalesTotal fetchSalesTotal(Product product, Date startDate, Date endDate) {
+    public SalesTotal fetchSalesTotal(Product product, Date startDate, Date endDate) {
         DateFormat format = new SimpleDateFormat("M/d/yyyy");
         Map<String, Object> params = new HashMap<>() {{
             put("productId", product.getId());
